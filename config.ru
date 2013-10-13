@@ -1,2 +1,2 @@
-git require './hedgeslist_app'
+require './hedgeslist_app'
 run Sinatra::Application

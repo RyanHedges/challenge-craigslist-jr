@@ -1,5 +1,7 @@
 <h1>Listings of all the things!</h1>
 
 <% @all_listings.each do |listing| %>
-  <p><a href="listing/<%= listing.id %>"><%= listing.title %></a></p>
-  <% end %>
+  <p>
+    <a href="listing/<%= listing.id %>"><%= listing.title %></a>
+  </p>
+<% end %>

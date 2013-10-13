@@ -30,13 +30,14 @@ end
     expect(page).to have_content('buy sams jacket')
   end
 
-  # scenario "clicking on a list should take you to its page" do
-  #   visit '/'
-  #   click_on 'browse our listings'
-  #   click_on 'derp'
+  scenario "clicking on a list should take you to its page" do
+    Listing.create(title: 'selling my soul', description: 'A soul that has been slightly used', price: '25')
+    visit '/'
+    click_on 'browse our listings'
+    click_on 'selling my soul'
 
-  #   expect(page).to have_content('please deliver')
-  # end
+    expect(page).to have_content('A soul that has been slightly used')
+  end
 
 
 

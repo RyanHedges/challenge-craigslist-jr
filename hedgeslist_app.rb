@@ -1,6 +1,7 @@
 require 'sinatra/activerecord'
 require 'sinatra'
 require './models/listing'
+require './models/user'
 
 set :database, "sqlite3:///hedges_list.db"
 
