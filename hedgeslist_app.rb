@@ -9,6 +9,11 @@ get '/' do
   erb :index
 end
 
+post '/' do
+  User.create(username: params[:username], password: params[:password])
+  redirect to '/'
+end
+
 get '/post-a-sale' do
   erb :post_a_sale
 end

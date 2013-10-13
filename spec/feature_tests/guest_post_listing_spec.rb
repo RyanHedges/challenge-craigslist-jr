@@ -3,9 +3,9 @@ require 'spec_helper'
 
 feature "guest can create listings" do
 
-before(:each) do
-  Listing.destroy_all
-end
+  before(:each) do
+    Listing.destroy_all
+  end
 
 
 
